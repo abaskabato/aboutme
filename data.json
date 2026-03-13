@@ -3,6 +3,7 @@
   "tagline": "Your one-line tagline",
   "photo": "profile.jpg",
   "links": [
+    {"label": "Medium", "url": "https://medium.com/@Abas_Kabato"},
     {"label": "Twitter", "url": "https://twitter.com/yourhandle"},
     {"label": "GitHub", "url": "https://github.com/yourhandle"},
     {"label": "LinkedIn", "url": "https://linkedin.com/in/yourhandle"},
