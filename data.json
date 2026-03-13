@@ -4,7 +4,7 @@
   "photo": "profile.jpg",
   "links": [
     {"label": "Medium", "url": "https://medium.com/@Abas_Kabato"},
-    {"label": "Twitter", "url": "https://twitter.com/yourhandle"},
+    {"label": "Twitter", "url": "https://x.com/abaskabato"},
     {"label": "GitHub", "url": "https://github.com/yourhandle"},
     {"label": "LinkedIn", "url": "https://linkedin.com/in/yourhandle"},
     {"label": "Email", "url": "mailto:you@example.com"}
