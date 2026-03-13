@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        #profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 30px 0 15px;
+            color: #111;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        #links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        #links a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        #links a:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+        
+        .section-year {
+            font-weight: 600;
+            color: #111;
+            margin-top: 25px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="profile-photo" src="" alt="Your photo">
+    
+    <h1 id="name"></h1>
+    <p id="tagline" class="tagline"></p>
+    
+    <div id="links"></div>
+
+    <hr>
+
+    <h2>About</h2>
+    <p id="bio"></p>
+
+    <h2>Experience</h2>
+    <div id="experience"></div>
+
+    <h2>Projects</h2>
+    <ul id="projects"></ul>
+
+    <h2>Writing</h2>
+    <ul id="writing"></ul>
+
+    <h2>Contact</h2>
+    <p id="contact"></p>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.title = data.name;
+                document.getElementById('page-title').textContent = data.name;
+                document.getElementById('profile-photo').src = data.photo || 'profile.jpg';
+                document.getElementById('name').textContent = data.name;
+                document.getElementById('tagline').textContent = data.tagline;
+                document.getElementById('bio').textContent = data.bio;
+                document.getElementById('contact').innerHTML = data.contact;
+
+                const linksContainer = document.getElementById('links');
+                data.links.forEach(link => {
+                    const a = document.createElement('a');
+                    a.href = link.url;
+                    a.textContent = link.label;
+                    linksContainer.appendChild(a);
+                });
+
+                const expContainer = document.getElementById('experience');
+                data.experience.forEach(exp => {
+                    const period = document.createElement('p');
+                    period.className = 'section-year';
+                    period.textContent = exp.period;
+                    
+                    const role = document.createElement('p');
+                    role.innerHTML = `<strong>${exp.company}</strong> — ${exp.role}`;
+                    
+                    const desc = document.createElement('p');
+                    desc.textContent = exp.description;
+                    
+                    expContainer.appendChild(period);
+                    expContainer.appendChild(role);
+                    expContainer.appendChild(desc);
+                });
+
+                const projectsContainer = document.getElementById('projects');
+                data.projects.forEach(project => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${project.url}">${project.name}</a> — ${project.description}`;
+                    projectsContainer.appendChild(li);
+                });
+
+                const writingContainer = document.getElementById('writing');
+                data.writing.forEach(post => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${post.url}">${post.title}</a> — ${post.date}`;
+                    writingContainer.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>

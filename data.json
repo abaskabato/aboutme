@@ -1,0 +1,33 @@
+{
+  "name": "Your Name",
+  "tagline": "Your one-line tagline",
+  "photo": "profile.jpg",
+  "links": [
+    {"label": "Twitter", "url": "https://twitter.com/yourhandle"},
+    {"label": "GitHub", "url": "https://github.com/yourhandle"},
+    {"label": "LinkedIn", "url": "https://linkedin.com/in/yourhandle"},
+    {"label": "Email", "url": "mailto:you@example.com"}
+  ],
+  "bio": "Write a brief bio about yourself here. What do you do? What's your background? What are you interested in?",
+  "experience": [
+    {
+      "period": "2024 - Present",
+      "company": "Company Name",
+      "role": "Role",
+      "description": "Brief description of what you did."
+    },
+    {
+      "period": "2022 - 2024",
+      "company": "Company Name",
+      "role": "Role",
+      "description": "Brief description of what you did."
+    }
+  ],
+  "projects": [
+    {"name": "Project Name", "url": "#", "description": "Brief description"}
+  ],
+  "writing": [
+    {"title": "Blog Post Title", "url": "#", "date": "2024"}
+  ],
+  "contact": "Feel free to reach out at you@example.com"
+}
