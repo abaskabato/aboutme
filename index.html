@@ -129,9 +129,15 @@
       #history .ico img {
         width: 36px;
         height: 36px;
-        border-radius: 50%;
+        border-radius: 4px;
         object-fit: cover;
         margin-top: 20px;
+        opacity: 0.8;
+      }
+
+      #history .ico img:empty,
+      #history .ico img[src*="ui-avatars"] {
+        display: none;
       }
       
       #history .desc {
@@ -229,7 +235,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Recrutas&background=0066cc&color=fff&size=64" />
         </div>
         <div class="desc">
           Founder at <a href="https://recrutas.ai">Recrutas.ai</a>. Building AI-powered recruitment solutions to transform how companies hire talent.
@@ -242,7 +247,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=SB&background=00704a&color=fff&size=64" />
         </div>
         <div class="desc">
           Senior Analyst at <a href="https://starbucks.com">Starbucks</a>. Supporting Genetec across North America. Build and maintain Microsoft 365 (Power Automate, SharePoint) automation and reporting pipelines, leverage Power BI for analytics, and lead migration to Resolver for centralized risk management and incident tracking.
@@ -255,7 +259,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff&size=64" />
         </div>
         <div class="desc">
           Senior Information Technology Support at <a href="https://amazon.com">Amazon</a>. Supporting MDF and IDF infrastructure across multiple Amazon sites, including Juniper SRX firewall configuration deployments, APC NetBotz firmware upgrades, Cisco switch lifecycle updates, and VLAN automation. Leading VSM/NVR server rebuilds to improve Loss Prevention investigation efficiency.
@@ -268,7 +271,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=EEC&background=2563eb&color=fff&size=64" />
         </div>
         <div class="desc">
           IT Consultant at <a href="https://eec-wa.org">Equity in Education Coalition</a>. Worked on full-stack development and architecture of the ConnectWA app, serving 250K+ users across 23+ nonprofits. Supported cloud-based deployments, CI/CD pipelines via Git Actions, and performance optimization. Improved operational efficiency by 50%.
@@ -281,7 +283,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Pella&background=000&color=fff&size=64" />
         </div>
         <div class="desc">
           IT Consultant at <a href="https://pella.com">Pella Corporation</a>. Tier 2/3 support requests via Pomeroy Technologies and TATA Consultancy. Executed IMACD workflows, endpoint hardware diagnostics, OS/application troubleshooting, data backup/migration, and VPN/network configuration.
@@ -294,7 +295,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=TECK&background=0066cc&color=fff&size=64" />
         </div>
         <div class="desc">
           Software Quality Engineer at TECKpert. Led software quality engineering for the Longbow Dashboard, a proprietary platform that utilizes quantitative models to achieve consistent investment results.
@@ -307,7 +307,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=BECU&background=0078c5&color=fff&size=64" />
         </div>
         <div class="desc">
           Information Technology Support Engineer (Internship) at <a href="https://becu.org">BECU</a>. Worked on Azure Pipelines errors by providing tools and methods for effective error analysis.
@@ -320,7 +319,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Hexagon&background=333&color=fff&size=64" />
         </div>
         <div class="desc">
           Support Engineer at Hexagon Computer Systems. Developed CMS-based web applications and contributed to the design and maintenance of multiple business websites in Ethiopia.
@@ -335,7 +333,6 @@
         <div class="timespan"></div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=CWA&background=2563eb&color=fff&size=64" />
         </div>
         <div class="desc">
           <a href="https://connect-wa.org/">ConnectWA App</a> — Full-stack development and architecture, serving 250K+ users across 23+ nonprofits.
@@ -346,7 +343,6 @@
         <div class="timespan"></div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Longbow&background=0066cc&color=fff&size=64" />
         </div>
         <div class="desc">
           <a href="https://mylongbow.com/">Longbow Dashboard</a> — Software quality engineering for a proprietary investment platform utilizing quantitative models.
@@ -357,7 +353,6 @@
         <div class="timespan"></div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Azure&background=0089d6&color=fff&size=64" />
         </div>
         <div class="desc">
           <a href="https://github.com/abaskabato/Azure-Pipelines-Error-Analysis">Azure Pipelines Error Analysis</a> — AZPEA project - analyzes release logs using KQL and PowerShell to identify top 10 errors and Azure resource usage.
@@ -374,7 +369,6 @@
         </div>
         <div class="ico">
           <div class="entry-dot"></div>
-          <img src="https://ui-avatars.com/api/?name=Medium&background=000&color=fff&size=64" />
         </div>
         <div class="desc">
           <a href="https://expo.dev/blog/from-idea-to-google-play-store-in-100-days">From idea to Google Play Store in 100 days</a> — Featured as the visionary tech lead managing the ConnectWA app project for Equity in Education Coalition.
