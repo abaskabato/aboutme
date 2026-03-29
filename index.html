@@ -177,6 +177,53 @@
         color: #444;
       }
 
+      #education .entry {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 22px;
+      }
+
+      #education .timespan {
+        width: 80px;
+        flex-shrink: 0;
+        font-size: 0.8rem;
+        color: #777;
+        letter-spacing: 0.3px;
+      }
+
+      #education .ico {
+        position: relative;
+        width: 45px;
+        flex-shrink: 0;
+      }
+
+      #education .ico img {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        object-fit: contain;
+        margin-top: 22px;
+        opacity: 0.85;
+      }
+
+      #education .desc a {
+        color: #0074cc;
+        text-decoration: none;
+      }
+
+      #education .desc a:hover {
+        text-decoration: underline;
+      }
+
+      #education .role {
+        font-weight: 600;
+        color: #000;
+      }
+
+      #education .company {
+        color: #0074cc;
+      }
+
       #writing .ctitle {
         margin-top: 45px;
       }
@@ -266,36 +313,6 @@
     <div id="bio" class="container">
       <div class="ctitle">about</div>
       <div>Originally from Ethiopia, now calling Seattle, Washington home. Founder of <a href="https://recrutas.ai">Recrutas.ai</a>, an AI-powered recruitment platform. Senior IT and Cloud Infrastructure Engineer with a robust background in DevOps automation, cloud operations, and network engineering.</div>
-    </div>
-
-    <div id="education" class="container">
-      <div class="ctitle">education</div>
-
-      <div class="entry row">
-        <div class="timespan">
-          2018 – 2019
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="https://logo.clearbit.com/pdx.edu" onerror="this.style.display='none'" />
-        </div>
-        <div class="desc">
-          <span class="role">Professional Graduate Certificate</span>, Data Science at <a href="https://www.pdx.edu/business/" class="company">Portland State University - School of Business</a>.
-        </div>
-      </div>
-
-      <div class="entry row">
-        <div class="timespan">
-          2012 – 2017
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="https://logo.clearbit.com/aau.edu.et" onerror="this.style.display='none'" />
-        </div>
-        <div class="desc">
-          <span class="role">Bachelor's degree</span>, Electrical and Computer Engineering at <a href="https://www.aau.edu.et/" class="company">Addis Ababa University</a>.
-        </div>
-      </div>
     </div>
 
     <div id="history" class="container">
@@ -402,6 +419,36 @@
         </div>
         <div class="desc">
           <span class="role">Support Engineer</span> at <a href="https://hexagonview.com/" class="company">Hexagon Computer Systems</a>. Developed CMS-based web applications and contributed to the design and maintenance of multiple business websites in Ethiopia.
+        </div>
+      </div>
+    </div>
+
+    <div id="education" class="container">
+      <div class="ctitle">education</div>
+
+      <div class="entry row">
+        <div class="timespan">
+          2018 – 2019
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://logo.clearbit.com/pdx.edu" onerror="this.style.display='none'" />
+        </div>
+        <div class="desc">
+          <span class="role">Professional Graduate Certificate</span>, Data Science at <a href="https://www.pdx.edu/business/" class="company">Portland State University - School of Business</a>.
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">
+          2012 – 2017
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://logo.clearbit.com/aau.edu.et" onerror="this.style.display='none'" />
+        </div>
+        <div class="desc">
+          <span class="role">Bachelor's degree</span>, Electrical and Computer Engineering at <a href="https://www.aau.edu.et/" class="company">Addis Ababa University</a>.
         </div>
       </div>
     </div>
