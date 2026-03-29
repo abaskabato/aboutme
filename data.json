@@ -6,7 +6,7 @@
     {"label": "Medium", "url": "https://medium.com/@Abas_Kabato"},
     {"label": "Twitter", "url": "https://x.com/abaskabato"},
     {"label": "LinkedIn", "url": "https://www.linkedin.com/in/abaskabato"},
-    {"label": "Email", "url": "mailto:abas@eec-wa.org"}
+    {"label": "Email", "url": "mailto:abas@recrutas.ai"}
   ],
   "bio": "Originally from Ethiopia, now calling Seattle, Washington home. Founder of Recrutas.ai, an AI-powered recruitment platform. Senior IT and Cloud Infrastructure Engineer with a robust background in DevOps automation, cloud operations, and network engineering. Led projects that have enhanced community access to digital resources.",
   "experience": [
@@ -67,5 +67,5 @@
   "writing": [
     {"title": "From idea to Google Play Store in 100 days", "url": "https://expo.dev/blog/from-idea-to-google-play-store-in-100-days", "date": "2024", "description": "Featured as the visionary tech lead managing the ConnectWA app project for Equity in Education Coalition"}
   ],
-  "contact": "Reach out at abas@eec-wa.org"
+  "contact": "Reach out at abas@recrutas.ai"
 }
