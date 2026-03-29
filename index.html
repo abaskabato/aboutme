@@ -1,185 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Your Name</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Abas Kabato</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: #fff;
+      }
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .row {
+        display: flex;
+        gap: 30px;
+      }
+      
+      #dpic {
+        flex-shrink: 0;
+      }
+      
+      #dpic img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      #ddesc {
+        flex: 1;
+      }
+      
+      #ddesc h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+      
+      #ddesc h2 {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+      
+      #dico {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      
+      #dico a {
+        display: inline-block;
+      }
+      
+      #dico img.iico {
+        width: 24px;
+        height: 24px;
+        opacity: 0.7;
+        transition: opacity 0.2s;
+      }
+      
+      #dico img.iico:hover {
+        opacity: 1;
+      }
+      
+      hr {
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 30px 0;
+      }
+      
+      .ctitle {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #999;
+        margin-bottom: 15px;
+        margin-top: 30px;
+      }
+      
+      #history .entry {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 25px;
+      }
+      
+      #history .timespan {
+        width: 90px;
+        flex-shrink: 0;
+        font-size: 0.9rem;
+        color: #666;
+      }
+      
+      #history .ico {
+        position: relative;
+        width: 36px;
+        flex-shrink: 0;
+      }
+      
+      #history .entry-dot {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 10px;
+        height: 10px;
+        background: #333;
+        border-radius: 50%;
+      }
+      
+      #history .ico img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 20px;
+      }
+      
+      #history .desc {
+        flex: 1;
+      }
+      
+      #history .desc a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      
+      #history .desc a:hover {
+        text-decoration: underline;
+      }
+      
+      #bio .ctitle {
+        margin-top: 0;
+      }
+      
+      .links-list {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      
+      .links-list a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+      
+      .links-list a:hover {
+        text-decoration: underline;
+      }
+      
+      @media (max-width: 600px) {
+        .row {
+          flex-direction: column;
         }
         
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        #dpic img {
+          width: 120px;
+          height: 120px;
         }
         
-        #profile-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
+        #history .entry {
+          flex-direction: column;
+          gap: 10px;
         }
         
-        h1 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
+        #history .timespan {
+          width: auto;
         }
         
-        h2 {
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin: 30px 0 15px;
-            color: #111;
+        #history .ico {
+          display: none;
         }
-        
-        p {
-            margin-bottom: 10px;
-        }
-        
-        .tagline {
-            color: #666;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-        }
-        
-        #links {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        
-        #links a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        
-        #links a:hover {
-            text-decoration: underline;
-        }
-        
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        hr {
-            border: none;
-            border-top: 1px solid #eee;
-            margin: 30px 0;
-        }
-        
-        .section-year {
-            font-weight: 600;
-            color: #111;
-            margin-top: 25px;
-        }
-        
-        @media (max-width: 600px) {
-            body {
-                padding: 20px 15px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    <img id="profile-photo" src="" alt="Your photo">
-    
-    <h1 id="name"></h1>
-    <p id="tagline" class="tagline"></p>
-    
-    <div id="links"></div>
+  </head>
+  <body>
+
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="profile.jpg" class="ppic" />
+        </div>
+        <div id="ddesc">
+          <h1>Abas Kabato</h1>
+          <h2>Senior IT and Cloud Infrastructure Engineer with over seven years of experience building resilient, large-scale technology environments. Expert in DevOps-driven automation, cloud operations, and network engineering (Juniper/Cisco). Proven record improving operational efficiency by 50% and managing platforms serving 250,000+ users.</h2>
+          <div id="dico">
+            <a href="https://github.com/abaskabato"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" class="iico" /></a>
+            <a href="https://www.linkedin.com/in/abaskabato"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" class="iico" /></a>
+            <a href="https://medium.com/@Abas_Kabato"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/medium.svg" class="iico" /></a>
+            <a href="https://x.com/abaskabato"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" class="iico" /></a>
+            <a href="mailto:abas@recrutas.ai"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mail.svg" class="iico" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <hr>
 
-    <h2>About</h2>
-    <p id="bio"></p>
+    <div id="bio" class="container">
+      <div class="ctitle">about</div>
+      <div>Originally from Ethiopia, now calling Seattle, Washington home. Founder of <a href="https://recrutas.ai">Recrutas.ai</a>, an AI-powered recruitment platform. Senior IT and Cloud Infrastructure Engineer with a robust background in DevOps automation, cloud operations, and network engineering.</div>
+    </div>
 
-    <h2>Experience</h2>
-    <div id="experience"></div>
+    <div id="history" class="container">
+      <div class="ctitle">experience</div>
 
-    <h2>Projects</h2>
-    <ul id="projects"></ul>
+      <div class="entry row">
+        <div class="timespan">
+          2025 -
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Recrutas&background=0066cc&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          Founder at <a href="https://recrutas.ai">Recrutas.ai</a>. Building AI-powered recruitment solutions to transform how companies hire talent.
+        </div>
+      </div>
 
-    <h2>Writing</h2>
-    <ul id="writing"></ul>
+      <div class="entry row">
+        <div class="timespan">
+          Jun 2025 -
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=SB&background=00704a&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          Senior Analyst at <a href="https://starbucks.com">Starbucks</a>. Supporting Genetec across North America. Build and maintain Microsoft 365 (Power Automate, SharePoint) automation and reporting pipelines, leverage Power BI for analytics, and lead migration to Resolver for centralized risk management and incident tracking.
+        </div>
+      </div>
 
-    <h2>Contact</h2>
-    <p id="contact"></p>
+      <div class="entry row">
+        <div class="timespan">
+          Jun 2020 -
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Amazon&background=FF9900&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          Senior Information Technology Support at <a href="https://amazon.com">Amazon</a>. Supporting MDF and IDF infrastructure across multiple Amazon sites, including Juniper SRX firewall configuration deployments, APC NetBotz firmware upgrades, Cisco switch lifecycle updates, and VLAN automation. Leading VSM/NVR server rebuilds to improve Loss Prevention investigation efficiency.
+        </div>
+      </div>
 
-    <script>
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                document.title = data.name;
-                document.getElementById('page-title').textContent = data.name;
-                document.getElementById('profile-photo').src = data.photo || 'profile.jpg';
-                document.getElementById('name').textContent = data.name;
-                document.getElementById('tagline').textContent = data.tagline;
-                document.getElementById('bio').textContent = data.bio;
-                document.getElementById('contact').innerHTML = data.contact;
+      <div class="entry row">
+        <div class="timespan">
+          2022 - 2025
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=EEC&background=2563eb&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          IT Consultant at <a href="https://eec-wa.org">Equity in Education Coalition</a>. Worked on full-stack development and architecture of the ConnectWA app, serving 250K+ users across 23+ nonprofits. Supported cloud-based deployments, CI/CD pipelines via Git Actions, and performance optimization. Improved operational efficiency by 50%.
+        </div>
+      </div>
 
-                const linksContainer = document.getElementById('links');
-                data.links.forEach(link => {
-                    const a = document.createElement('a');
-                    a.href = link.url;
-                    a.textContent = link.label;
-                    linksContainer.appendChild(a);
-                });
+      <div class="entry row">
+        <div class="timespan">
+          2021 - 2022
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Pella&background=000&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          IT Consultant at <a href="https://pella.com">Pella Corporation</a>. Tier 2/3 support requests via Pomeroy Technologies and TATA Consultancy. Executed IMACD workflows, endpoint hardware diagnostics, OS/application troubleshooting, data backup/migration, and VPN/network configuration.
+        </div>
+      </div>
 
-                const expContainer = document.getElementById('experience');
-                data.experience.forEach(exp => {
-                    const period = document.createElement('p');
-                    period.className = 'section-year';
-                    period.textContent = exp.period;
-                    
-                    const role = document.createElement('p');
-                    role.innerHTML = `<strong>${exp.company}</strong> — ${exp.role}`;
-                    
-                    const desc = document.createElement('p');
-                    desc.textContent = exp.description;
-                    
-                    expContainer.appendChild(period);
-                    expContainer.appendChild(role);
-                    expContainer.appendChild(desc);
-                });
+      <div class="entry row">
+        <div class="timespan">
+          2021
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=TECK&background=0066cc&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          Software Quality Engineer at TECKpert. Led software quality engineering for the Longbow Dashboard, a proprietary platform that utilizes quantitative models to achieve consistent investment results.
+        </div>
+      </div>
 
-                const projectsContainer = document.getElementById('projects');
-                data.projects.forEach(project => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<a href="${project.url}">${project.name}</a> — ${project.description}`;
-                    projectsContainer.appendChild(li);
-                });
+      <div class="entry row">
+        <div class="timespan">
+          2019 - 2020
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=BECU&background=0078c5&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          Information Technology Support Engineer (Internship) at <a href="https://becu.org">BECU</a>. Worked on Azure Pipelines errors by providing tools and methods for effective error analysis.
+        </div>
+      </div>
 
-                const writingContainer = document.getElementById('writing');
-                data.writing.forEach(post => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<a href="${post.url}">${post.title}</a> — ${post.date}`;
-                    writingContainer.appendChild(li);
-                });
-            });
-    </script>
-</body>
+      <div class="entry row">
+        <div class="timespan">
+          2015 - 2017
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Hexagon&background=333&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          Support Engineer at Hexagon Computer Systems. Developed CMS-based web applications and contributed to the design and maintenance of multiple business websites in Ethiopia.
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="container">
+      <div class="ctitle">projects</div>
+
+      <div class="entry row">
+        <div class="timespan"></div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=CWA&background=2563eb&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          <a href="https://connect-wa.org/">ConnectWA App</a> — Full-stack development and architecture, serving 250K+ users across 23+ nonprofits.
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan"></div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Longbow&background=0066cc&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          <a href="https://mylongbow.com/">Longbow Dashboard</a> — Software quality engineering for a proprietary investment platform utilizing quantitative models.
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan"></div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Azure&background=0089d6&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          <a href="https://github.com/abaskabato/Azure-Pipelines-Error-Analysis">Azure Pipelines Error Analysis</a> — AZPEA project - analyzes release logs using KQL and PowerShell to identify top 10 errors and Azure resource usage.
+        </div>
+      </div>
+    </div>
+
+    <div id="writing" class="container">
+      <div class="ctitle">writing</div>
+
+      <div class="entry row">
+        <div class="timespan">
+          2024
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://ui-avatars.com/api/?name=Medium&background=000&color=fff&size=64" />
+        </div>
+        <div class="desc">
+          <a href="https://expo.dev/blog/from-idea-to-google-play-store-in-100-days">From idea to Google Play Store in 100 days</a> — Featured as the visionary tech lead managing the ConnectWA app project for Equity in Education Coalition.
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+  </body>
 </html>
