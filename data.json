@@ -8,7 +8,7 @@
     {"label": "LinkedIn", "url": "https://www.linkedin.com/in/abaskabato"},
     {"label": "Email", "url": "mailto:abas@eec-wa.org"}
   ],
-  "bio": "Originally from Ethiopia, now calling Seattle, Washington home. Founder of Recrutas.ai, an AI-powered recruitment platform. Senior IT and Cloud Infrastructure Engineer with a robust background in DevOps automation, cloud operations, and network engineering. Led projects that have enhanced community access to digital resources, impacting over 250,000 users.",
+  "bio": "Originally from Ethiopia, now calling Seattle, Washington home. Founder of Recrutas.ai, an AI-powered recruitment platform. Senior IT and Cloud Infrastructure Engineer with a robust background in DevOps automation, cloud operations, and network engineering. Led projects that have enhanced community access to digital resources.",
   "experience": [
     {
       "period": "2025 - Present",
@@ -32,7 +32,7 @@
       "period": "Jan 2022 - Aug 2025",
       "company": "Equity in Education Coalition",
       "role": "IT Consultant",
-      "description": "Worked on full-stack development and architecture of the ConnectWA app, serving 250K+ users across 23+ nonprofits. Supported cloud-based deployments, CI/CD pipelines via Git Actions, and performance optimization."
+      "description": "Worked on full-stack development and architecture of the ConnectWA app, serving 250K+ users across 23+ nonprofits. Supported cloud-based deployments, CI/CD pipelines via Git Actions, and performance optimization. Improved operational efficiency by 50%."
     },
     {
       "period": "Jul 2021 - Mar 2022",
