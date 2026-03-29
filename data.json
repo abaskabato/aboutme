@@ -1,6 +1,6 @@
 {
   "name": "Abas Kabato",
-  "tagline": "Digital Equity Manager | Bridging the digital divide in the Pacific Northwest",
+  "tagline": "Senior IT and Cloud Infrastructure Engineer with over seven years of experience building resilient, large-scale technology environments. Expert in DevOps-driven automation, cloud operations, and network engineering (Juniper/Cisco). Proven record improving operational efficiency by 50% and managing platforms serving 250,000+ users.",
   "photo": "profile.jpg",
   "links": [
     {"label": "Medium", "url": "https://medium.com/@Abas_Kabato"},
@@ -8,8 +8,14 @@
     {"label": "LinkedIn", "url": "https://www.linkedin.com/in/abaskabato"},
     {"label": "Email", "url": "mailto:abas@eec-wa.org"}
   ],
-  "bio": "Originally from Ethiopia, now calling Seattle, Washington home. I'm the Manager of Digital Equity at the Equity in Education Center, leading efforts to bridge the digital divide in the Pacific Northwest. With a robust IT management and development background, I've spearheaded projects that have enhanced community access to digital resources, impacting over 50,000 community members.",
+  "bio": "Originally from Ethiopia, now calling Seattle, Washington home. Founder of Recrutas.ai, an AI-powered recruitment platform. Senior IT and Cloud Infrastructure Engineer with a robust background in DevOps automation, cloud operations, and network engineering. Led projects that have enhanced community access to digital resources, impacting over 250,000 users.",
   "experience": [
+    {
+      "period": "2025 - Present",
+      "company": "Recrutas.ai",
+      "role": "Founder",
+      "description": "Building AI-powered recruitment solutions to transform how companies hire talent."
+    },
     {
       "period": "Jun 2025 - Present",
       "company": "Starbucks",
